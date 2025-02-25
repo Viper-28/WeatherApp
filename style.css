@@ -109,3 +109,33 @@ body{
     margin-top: 10px;
     display: none;
 }
+@media (max-width:480px)
+{
+    .card{
+        width:95%;
+        padding:20px
+    }
+    .search{
+        flex-direction: column;
+        gap:10px;
+    }
+    .search input
+    {
+        width:100%;
+        font-size: 14px;
+    }
+    .search button
+    {
+        width :45px;
+        height:45px;
+    }
+    .weather h1
+    {
+        font-size: 50px;
+    }
+    .weather h2
+    {
+        font-size: 30px;
+    }
+
+}
