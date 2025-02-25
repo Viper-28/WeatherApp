@@ -71,3 +71,7 @@ const ak ="cbca6d35fbcbf94d2350cef3adcfc199";
                 checkweather(searchBox.value);
             }
         });
+        searchBtn.addEventListener("touchstart",()=>
+        {
+            checkweather(searchBox.value);
+        });
