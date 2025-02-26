@@ -10,7 +10,7 @@ searchBox.addEventListener("input", function () {
     const query = this.value.toLowerCase().trim();
     selectedIndex = -1;
     citySuggestions.innerHTML = "";
-    citySuggestions.style.width = `${searchBox.clientWidth}px`; // ✅ Match width of search box
+    citySuggestions.style.width = `${searchBox.clientWidth}px`; 
 
     if (!query) {
         citySuggestions.style.display = "none";
@@ -38,7 +38,7 @@ searchBox.addEventListener("keydown", function (e) {
         if (selectedIndex < suggestions.length - 1) {
             selectedIndex++;
         } else {
-            selectedIndex = 0; // Wrap around to the first option
+            selectedIndex = 0; 
         }
         updateSelection(suggestionList);
     } else if (e.key === "ArrowUp") {
@@ -46,7 +46,7 @@ searchBox.addEventListener("keydown", function (e) {
         if (selectedIndex > 0) {
             selectedIndex--;
         } else {
-            selectedIndex = suggestions.length - 1; // Wrap around to last option
+            selectedIndex = suggestions.length - 1; 
         }
         updateSelection(suggestionList);
     } else if (e.key === "Enter") {
