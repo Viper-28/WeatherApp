@@ -139,3 +139,59 @@ body{
     }
 
 }
+input[list]::-webkit-calender-picker-indicator
+{
+    display: none;
+}
+.search {
+    position: relative;
+    width: 100%;
+    max-width: 500px; 
+    margin: auto;
+}
+
+#searchBox {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#citySuggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 1000;
+    display: none;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.suggestion-item:hover {
+    background-color: #f1f1f1; 
+}
+.suggestion-item.selected {
+    background-color: #e0e0e0; 
+    font-weight: bold;
+}

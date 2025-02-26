@@ -11,7 +11,8 @@
             <p>Invalid City Name</p>
         </div>
         <div class="search">
-            <input type="text" placeholder="Enter City" spellcheck="false">
+            <input type="text" placeholder="Enter City" spellcheck="false" id="searchBox" list="citySuggestions">
+            <div id="citySuggestions"></div>
             <button><img src="icons\search.svg"></button>
         </div>
         <div class="weather">
@@ -36,6 +37,6 @@
             </div>
         </div>
     </div>
-    <script src="api.js"></script>
+    <script type="module" src="api.js"></script>
 </body>
 </html>
